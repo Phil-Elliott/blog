@@ -1,5 +1,6 @@
 import React from "react"
 import "./Article-Container.scss"
+import { Link } from "react-router-dom"
 
 const ArticleContainer = ({
   title,
@@ -13,23 +14,20 @@ const ArticleContainer = ({
   index: number
 }) => {
   return (
-    <div className="home-popular-article-container">
-      <div
-        style={index % 2 !== 0 ? { order: "1" } : { order: "0" }}
-        className="home-popular-article-container-left"
-        // className={
-        //   index % 2 !== 0
-        //     ? "home-popular-article-container-left home-popular-article-container-order-right"
-        //     : "home-popular-article-container-left"
-        // }
-      >
-        <h1>{title}</h1>
-        <p>{description}</p>
+    <Link to="/article" className="link">
+      <div className="home-popular-article-container">
+        <div
+          style={index % 2 !== 0 ? { order: "1" } : { order: "0" }}
+          className="home-popular-article-container-left"
+        >
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+        <div className="home-popular-article-container-right">
+          <img className="home-featured-image" src={image} alt="Coffee" />
+        </div>
       </div>
-      <div className="home-popular-article-container-right">
-        <img className="home-featured-image" src={image} alt="Coffee" />
-      </div>
-    </div>
+    </Link>
   )
 }
 

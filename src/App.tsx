@@ -1,14 +1,25 @@
 import React from "react"
 import "./App.scss"
 import { Header, Footer } from "./Components/index"
-import { Home } from "./Pages/index"
+import { Home, Article, About, ArticlesContainer, Contact } from "./Pages/index"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App() {
   return (
     <main className="App">
-      <Header />
-      <Home />
-      <Footer />
+      <Router>
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/article" element={<Article />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/articles" element={<ArticlesContainer />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <Footer />
+      </Router>
     </main>
   )
 }

@@ -5,6 +5,11 @@
     @extend %flex-between;
     list-style: none;
 
+    .header-nav-link {
+      color: black;
+      text-decoration: none;
+    }
+
     li {
       cursor: pointer;
       margin-inline: 1.5rem;
