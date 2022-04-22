@@ -1,0 +1,11 @@
+@import "./../../../Shared.scss";
+
+.home-popular-container {
+  @extend %main-width;
+  padding-block: 2rem 17rem;
+}
+
+.home-popular-articles-container {
+  display: grid;
+  gap: 3%;
+}

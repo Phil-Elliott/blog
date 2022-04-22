@@ -1,0 +1,19 @@
+@import "./../../../Shared.scss";
+
+.header-right-container {
+  button {
+    background-color: $tertiary;
+    border: none;
+    border-radius: 3px;
+    color: $primary;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: $transistion-ease;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}

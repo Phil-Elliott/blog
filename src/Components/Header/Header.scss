@@ -1,0 +1,48 @@
+@import "./../../shared.scss";
+
+.header-content-container {
+  padding-block: 0.5rem;
+  background-color: $primary;
+  border-bottom: solid 1px #d3d3d3;
+  position: relative;
+}
+
+.header-top-content-container {
+  color: $secondary;
+  @extend %main-width;
+  @extend %flex-between;
+}
+
+.header-bottom-content-container {
+  border-bottom: solid 1px #d3d3d3;
+  transition: $transistion-ease;
+}
+
+.header-bottom-content-container-closed {
+  margin-top: -2.75rem;
+  transition: $transistion-ease;
+}
+
+.header-responsive-links-container {
+  @extend %main-width;
+  padding-block: 0.5rem;
+
+  li {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .header-fullSize-nav {
+    display: none;
+  }
+  .header-top-content-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header-bottom-content-container {
+    display: none !important;
+  }
+}

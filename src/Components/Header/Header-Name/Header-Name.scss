@@ -1,0 +1,22 @@
+@import "./../../../Shared.scss";
+
+.header-logo-container {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: $tertiary;
+    padding-right: 1rem;
+  }
+  p {
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .header-logo-container {
+    p {
+      display: none;
+    }
+  }
+}

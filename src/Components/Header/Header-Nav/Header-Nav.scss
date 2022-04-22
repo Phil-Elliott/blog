@@ -1,0 +1,18 @@
+@import "./../../../Shared.scss";
+
+.header-nav-container {
+  ul {
+    @extend %flex-between;
+    list-style: none;
+
+    li {
+      cursor: pointer;
+      margin-inline: 1.5rem;
+      font-weight: 500;
+
+      &:hover {
+        color: $tertiary;
+      }
+    }
+  }
+}
