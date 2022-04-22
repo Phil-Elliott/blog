@@ -103,4 +103,18 @@ export default App
   favicon 
     - copy ted logo
 
+
+
+  need to learn how to do touch swipe for latest articles
+
+
+
+
+  1) Make latest not a slider 
+  2) Articles can be the same as popular 
+  3) Do something similar to other about sections 
+  4) ? Could remove contact and register for now 
+  5) Make article page
+  6) Start writing blog posts (need 9 articles)
+
 */

@@ -17,6 +17,11 @@ const ArticleContainer = ({
       <div
         style={index % 2 !== 0 ? { order: "1" } : { order: "0" }}
         className="home-popular-article-container-left"
+        // className={
+        //   index % 2 !== 0
+        //     ? "home-popular-article-container-left home-popular-article-container-order-right"
+        //     : "home-popular-article-container-left"
+        // }
       >
         <h1>{title}</h1>
         <p>{description}</p>

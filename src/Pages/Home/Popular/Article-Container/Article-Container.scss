@@ -1,9 +1,7 @@
 @import "./../../../../Shared.scss";
 
 .home-popular-article-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  @extend %grid-two-columns;
   grid-auto-flow: dense;
 }
 
@@ -13,9 +11,9 @@
   flex-direction: column;
 
   h1 {
-    padding-block: 2rem;
-    font-size: 2rem;
-    line-height: 3rem;
+    padding-block: 4%;
+    font-size: clamp(1.25rem, 2vw, 2vw);
+    line-height: 150%;
   }
 
   p {
@@ -30,5 +28,24 @@
   img {
     height: 45vh;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-popular-article-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .home-popular-article-container-left {
+    border-top: 0px solid #d3d3d3;
+    // border-bottom: 1px solid #d3d3d3;
+    order: 1 !important;
+    padding-bottom: 1rem;
+  }
+  .home-popular-article-container-right {
+    img {
+      height: 35vh;
+      padding-top: 1rem;
+    }
   }
 }

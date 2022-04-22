@@ -38,3 +38,26 @@
     font-size: 0.9rem;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .footer-container {
+    h1,
+    nav,
+    p {
+      width: 90%;
+    }
+    h1 {
+      padding-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+    ul {
+      li {
+        font-size: 0.6rem;
+      }
+    }
+    p {
+      font-size: 0.5rem;
+      padding-top: 2rem;
+    }
+  }
+}

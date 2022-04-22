@@ -10,9 +10,9 @@ const featuredArticle = {
 const Featured = () => {
   return (
     <section className="home-featured-container">
+      <h1 className="home-section-header featured-header">Featured</h1>
       <div className="home-featured-article-container">
         <div className="home-featured-left-container">
-          <h1 className="home-section-header">Featured</h1>
           <h2>{featuredArticle.title}</h2>
           <p>{featuredArticle.description}</p>
           <div>
