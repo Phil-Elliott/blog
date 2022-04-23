@@ -1,0 +1,48 @@
+@import "./../../Shared.scss";
+
+.article-container {
+  margin: 0 auto;
+  width: 50%;
+  @extend %flex-column;
+  min-height: 70vh;
+  padding-top: clamp(3rem, 5%, 5%);
+  padding-bottom: clamp(3rem, 5%, 5%);
+
+  h1 {
+    color: black;
+    font-size: clamp(1.5rem, 3vw, 3vw);
+    line-height: 130%;
+    padding-bottom: 2.5%;
+  }
+  p {
+    color: $light-color;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 2.5%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    padding-block: 2.5%;
+    border-top: 1px solid #d3d3d3;
+  }
+  .article-content {
+    p {
+      font-size: 1.15rem;
+      line-height: 170%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .article-container {
+    width: 90%;
+    img {
+      padding-block: 1rem;
+    }
+    p,
+    h1 {
+      padding-bottom: 1rem;
+    }
+  }
+}

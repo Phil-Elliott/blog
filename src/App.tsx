@@ -28,6 +28,8 @@ export default App
 
 /*
 
+will probably need to watch someone making a blog on youtube
+
 might be able to subscribe users through mailchimp 
 
   1) Header 

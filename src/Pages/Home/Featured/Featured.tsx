@@ -6,6 +6,8 @@ const featuredArticle = {
   title: "Start your day with the right cup of coffee",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  image:
+    "https://cdn.pixabay.com/photo/2013/08/11/19/46/coffee-171653_960_720.jpg",
 }
 
 const Featured = () => {
@@ -25,7 +27,7 @@ const Featured = () => {
           </div>
           <img
             className="home-featured-image"
-            src="https://cdn.pixabay.com/photo/2013/08/11/19/46/coffee-171653_960_720.jpg"
+            src={featuredArticle.image}
             alt="Coffee"
           />
         </div>
