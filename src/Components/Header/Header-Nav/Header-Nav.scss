@@ -8,16 +8,20 @@
     .header-nav-link {
       color: black;
       text-decoration: none;
+
+      &:hover {
+        color: $tertiary;
+      }
     }
 
     li {
       cursor: pointer;
       margin-inline: 1.5rem;
       font-weight: 500;
-
-      &:hover {
-        color: $tertiary;
-      }
     }
   }
+}
+
+.header-nav-link-active {
+  color: $tertiary;
 }

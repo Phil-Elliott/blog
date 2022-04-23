@@ -31,6 +31,10 @@
   }
 }
 
+.no-top-border {
+  border-top: none;
+}
+
 @media only screen and (max-width: 1000px) {
   .home-popular-article-container {
     grid-template-columns: 1fr;

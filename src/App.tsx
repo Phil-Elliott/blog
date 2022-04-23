@@ -28,6 +28,8 @@ export default App
 
 /*
 
+might be able to subscribe users through mailchimp 
+
   1) Header 
     - home 
     - articles

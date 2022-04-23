@@ -1,0 +1,12 @@
+@import "./../../Shared.scss";
+
+.main-articles-container {
+  @extend %main-width;
+  padding-block: 5% 65%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-articles-container {
+    padding-block: 10% 15%;
+  }
+}

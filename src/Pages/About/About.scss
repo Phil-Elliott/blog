@@ -1,0 +1,33 @@
+@import "./../../Shared.scss";
+
+.about-container {
+  margin: 0 auto;
+  width: 50%;
+  @extend %flex-column;
+  min-height: 70vh;
+  padding-top: clamp(3rem, 5%, 5%);
+  padding-bottom: clamp(3rem, 5%, 5%);
+
+  h1 {
+    color: $tertiary;
+    padding-bottom: 5%;
+    font-size: clamp(1.25rem, 1.75vw, 1.75vw);
+  }
+  h2 {
+    font-size: clamp(1.5rem, 2.25vw, 2.25vw);
+    padding-bottom: 4%;
+  }
+  p {
+    color: $light-color;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-container {
+    width: 90%;
+  }
+}
