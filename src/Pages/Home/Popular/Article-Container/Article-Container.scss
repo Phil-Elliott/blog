@@ -2,7 +2,7 @@
 
 .home-popular-article-container {
   @extend %grid-two-columns;
-  grid-auto-flow: dense;
+  margin-bottom: 3%;
 }
 
 .home-popular-article-container-left {

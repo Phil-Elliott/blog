@@ -2,7 +2,7 @@
 
 .main-articles-container {
   @extend %main-width;
-  padding-block: 5% 65%;
+  padding-block: 5%;
 }
 
 @media only screen and (max-width: 1000px) {

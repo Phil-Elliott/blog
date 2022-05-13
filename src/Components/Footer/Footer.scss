@@ -23,6 +23,7 @@
       li {
         cursor: pointer;
         font-weight: 500;
+        font-size: clamp(0.9rem, 1vw, 1vw);
 
         &:hover {
           color: $tertiary;
@@ -44,20 +45,32 @@
     h1,
     nav,
     p {
-      width: 90%;
+      width: 70%;
     }
     h1 {
       padding-bottom: 2rem;
       font-size: 1.5rem;
     }
-    ul {
-      li {
-        font-size: 0.6rem;
-      }
-    }
+
     p {
-      font-size: 0.5rem;
       padding-top: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .footer-container {
+    h1,
+    nav,
+    p {
+      width: 90%;
+    }
+    li {
+      font-size: clamp(0.7rem, 2.5vw, 2.5vw) !important;
+    }
+
+    p {
+      font-size: clamp(0.65rem, 2vw, 2vw);
     }
   }
 }
